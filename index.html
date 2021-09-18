@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Yellowtail&display=swap"
+    rel="stylesheet"> 
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Punchy's Zine 2021: Sign-up Form</title>
+</head>
+<body>
+        <header class="punchy-2021-box__logo">
+            <h1>Punchy's Zine 2021!</h1>
+        </header>
+        <div class="flexbox">
+    <main class="form-card">
+                <h2>Sign-up Form</h2>
+            <form autocomplete="off" action="">
+            
+            <div class="input-field">
+                <label for="name">Name:</label><br />
+                    <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="input-field">
+               <label for="pronouns">Pronouns:</label><br />
+                    <input type="text" name="pronouns" placeholder="Your Pronouns" optional>
+            </div>
+                
+            <div class="input-field">
+              <label for="email" required>E-mail:</label><br />
+                    <input type="text" name="email" placeholder="Your E-mail Address">
+            </div>
+
+            <div class="select-wrapper">
+                    <label for="media-type">What type of media are you contributing?</label>
+                        <div class="select-wrapper__box">
+                        <select name="media-type" class="select" required>
+                            <option value="placeholder" disabled selected hidden>Please Select</option>
+                            <option value="fiction">Fiction</option>
+                            <option value="poetry">Poetry</option>
+                            <option value="essay">Essay</option>
+                            <option value="illustration">Illustration</option>
+                            <option value="comics">Comics</option>
+                            <option value="other">Other (we'll talk!)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="can-you-complete-card">
+                    <h3>Important!</h3>
+                        <input type="checkbox" id="checkbox-element" />
+                        <label for="checkbox-element">
+                            
+                        <span class="indicator"></span>
+                            
+                        <div class="label-text">
+                            By checking the box above, you promise to complete your
+                            submission by 5 p.m. CET on 15 December, 2021!
+                        </div>
+                        </label>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit"><span class="button__text">Submit!</span></button>
+                </div>
+            </form> 
+    </main>
+    </div>
+    <footer class="thanks">
+    Thanks!<br />
+    xx <a href="mailto:punchy@dummyemail.com">Punchy</a>
+    </footer>
+</body>
+</html>
