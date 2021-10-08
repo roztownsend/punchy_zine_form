@@ -4,7 +4,7 @@
 $fancy-font: "Yellowtail", serif;
 $primary-font: "Oswald", sans-serif;
 
-h1, h2, h3, footer {
+h1, h2, h3, .thanks {
     font-family: $fancy-font;
 }
 
@@ -29,6 +29,7 @@ h3 {
     filter: drop-shadow(3px 3px 1px #930000);
     text-transform: capitalize;
     margin: auto;
+    padding-bottom: 2%;
 }
 
 p, body, button {
@@ -38,4 +39,19 @@ p, body, button {
 
 footer {
     line-height: 1.25rem;
+}
+
+.thanks, .thanks a {
+font-size: 1.8rem;
+text-align: center;
+}
+
+.thanks a {
+    color: $punchy-pink;   
+}
+
+// I wanted a similar transition for that email link in the footer like I did with the other elements but I couldn't quite find a css tweak that did it without jury-rigging a bunch of box shadows...
+
+.thanks a:hover {
+    filter: drop-shadow(1px 1px 1px #00168C);
 }

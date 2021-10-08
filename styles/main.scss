@@ -113,6 +113,7 @@ select {
     background-color: $punchy-pink;
     text-align: center;
     width: 100%;
+    margin-top: 3%;
 }
 
 .can-you-complete-card:hover {
@@ -129,12 +130,12 @@ select {
     vertical-align: top;
     display: inline-block;
     width: 2.6rem;
-    visibility: hidden;
   }
 
   .checkbox-label {
     white-space: normal;
     display: inline-block;
+    margin-left:auto;
   }
 
 .button-container {
@@ -168,23 +169,20 @@ button:hover {
 
 /* Footer elements */
 
-footer {
+.thanks  {
     transform: rotate(20deg);
-    font-size: 1.8rem;
-    text-align: center;
     opacity: .7;
     color: $punchy-red;
     margin-top: -1%;
     height: 1rem;
 }
 
-footer a {
-    color: $punchy-pink;
+.jump-back, a {
+    text-align: center;
+    font: $primary-font;
     text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFF;
 }
 
-// I wanted a similar transition for that email link in the footer like I did with the other elements but I couldn't quite find a css tweak that did it without jury-rigging a bunch of box shadows...
-
-footer a:hover {
-    filter: drop-shadow(1px 1px 1px #00168C);
-}
