@@ -9,7 +9,7 @@ h1, h2, h3, footer {
 }
 
 h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     letter-spacing: .2rem;
     line-height: 4rem;
     filter: drop-shadow(3px 3px 1px #00168C);
@@ -17,13 +17,8 @@ h1 {
     opacity: 70%;
 }
 
-h1:hover {
-    transition: ease-in 1s;
-    opacity: 100%;
-}
-
 h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: .2rem;
     text-align: right;
     filter: drop-shadow(3px 3px 1px #e74b6d);
@@ -39,4 +34,8 @@ h3 {
 p, body, button {
     font-family: $primary-font;
     color: #FFF;
+}
+
+footer {
+    line-height: 1.25rem;
 }

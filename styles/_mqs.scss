@@ -1,17 +1,71 @@
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 320px) {
+
     .punchy-logo {
-        transform: rotate(-25deg);
-        margin-bottom: -10px;
+        transform: rotate(0deg);
+        margin-top: 1%;
     }
 
+    h1 {
+        opacity: 100%;
+    }
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: 1%;
+    }
+
+    .input-field, .select-wrapper, .can-you-complete-card {
+        font-size: 1rem;
+    }
+
+    main {
+        max-width: 100%;
+        border-top: 5px solid $highlight-color;
+        border-bottom: 5px solid $highlight-color;
+    }
+
+    input {
+        max-width: 17.5rem;
+        margin-left: 3%;
+    }
+
+    .can-you-complete-card {
+        width: 18rem;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
 }
 
-@media screen and (min-width: 769px)
-{
-.punchy-logo {
-    transform: rotate(-30deg);
-    margin-left: 15%;
-    margin-bottom: -10%;
+@media screen and (min-width: 768px) {
+    .punchy-logo {
+        transform: rotate(-25deg);
+        margin-bottom: -10%;
+    }
+
+    h1:hover {
+        transition: ease-in 1s;
+        opacity: 100%;
+    }    
+
+    main {
+        max-width: 60%;
+        border: 5px solid $highlight-color;
+        border-radius: 3.2rem;
+        }
+
+    .can-you-complete-card {
+        max-width: 25rem;
+        padding: 1rem;
+        border-radius: 1.25rem;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .punchy-logo {
+        transform: rotate(-30deg);
+        margin-left: 15%;
+        margin-bottom: -10%;
     }
 }

@@ -1,11 +1,8 @@
 
-@import 'mqs';
-@import 'fonts';
 
-$primary-color: #7386E7;
-$highlight-color: #FF9F9F;
-$punchy-pink: #e74b6d;
-$punchy-red: #930000;
+@import 'colors';
+@import 'fonts';
+@import 'mqs';
 
 /* Document-level elements */
 
@@ -25,12 +22,10 @@ body {
 /* Main/form elements */
 
 .title {
-    width: 90%;
-    align-self: baseline;
+    align-self: center;
 }
 
 main {
-    max-width: 60%;
     margin: auto;
     margin-top: -10%;
     display: flex;
@@ -40,8 +35,6 @@ main {
     align-items: center;
     flex-basis: 1;
     background-color: #6370B6;
-    border: 5px solid $highlight-color;
-    border-radius: 3.2rem;
 }
 
 form {
@@ -120,11 +113,7 @@ select {
     align-items: center;
     background-color: $punchy-pink;
     text-align: center;
-    max-width: 25rem;
     width: 100%;
-    padding: 1rem;
-    border-radius: 1.25rem;
-    margin: auto;
 }
 
 .can-you-complete-card:hover {
@@ -163,14 +152,14 @@ button {
     box-shadow: 0px 4px 4px rgba(0, 22, 140, 0.25);
     border-style: none;
     border-radius: 6.25rem;
-    width: 20rem;
+    width: 15rem;
     height: 3.5rem;
     padding: .2rem;
     transition: width 1.5s, background-color 1.5s;
 }
 
 button:hover {
-    width: 25rem;
+    width: 18rem;
     background-color: $punchy-red;
 }
 
