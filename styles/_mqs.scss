@@ -21,13 +21,13 @@
 
     main {
         max-width: 100%;
-        border-top: 5px solid $highlight-color;
-        border-bottom: 5px solid $highlight-color;
+        background-color: $primary-color;
     }
 
-    input {
+    input, select {
         max-width: 17.5rem;
         margin-left: 3%;
+        background-color: $form-bg;
     }
 
     .can-you-complete-card {
@@ -52,7 +52,12 @@
         max-width: 60%;
         border: 5px solid $highlight-color;
         border-radius: 3.2rem;
+        background-color: $form-bg;
         }
+
+    input, select {
+        background-color: $primary-color;
+    }
 
     .can-you-complete-card {
         max-width: 25rem;
