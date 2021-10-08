@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Yellowtail&display=swap');
+
+$fancy-font: "Yellowtail", serif;
+$primary-font: "Oswald", sans-serif;
+
+h1, h2, h3, footer {
+    font-family: $fancy-font;
+}
+
+h1 {
+    font-size: 4.5rem;
+    letter-spacing: .2rem;
+    line-height: 4rem;
+    filter: drop-shadow(3px 3px 1px #00168C);
+    color: #e74b6d;
+    opacity: 70%;
+}
+
+h1:hover {
+    transition: ease-in 1s;
+    opacity: 100%;
+}
+
+h2 {
+    font-size: 4rem;
+    letter-spacing: .2rem;
+    text-align: right;
+    filter: drop-shadow(3px 3px 1px #e74b6d);
+}
+
+h3 {
+    font-size: 3rem;
+    filter: drop-shadow(3px 3px 1px #930000);
+    text-transform: capitalize;
+    margin: auto;
+}
+
+p, body, button {
+    font-family: $primary-font;
+    color: #FFF;
+}

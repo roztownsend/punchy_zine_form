@@ -1,0 +1,201 @@
+
+@import 'fonts';
+
+$primary-color: #7386E7;
+$highlight-color: #FF9F9F;
+$punchy-pink: #e74b6d;
+$punchy-red: #930000;
+
+/* Document-level elements */
+
+body {
+    background-color: $primary-color;
+    font-size: 1.5rem;
+    height: 100vh;
+    width: 100vw;
+}
+
+.punchy-logo {
+    max-width: 20rem;
+    text-align: center;
+    transform: rotate(-30deg);
+}
+
+/* Main/form elements */
+
+.title {
+    width: 90%;
+    align-self: baseline;
+    margin: auto;
+}
+
+main {
+    max-width: 80%;
+    margin: auto;
+    margin-top: -10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 1;
+    background-color: #6370B6;
+    border: 5px solid $highlight-color;
+    border-radius: 50px;
+}
+
+form {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.input-field, .select-wrapper {
+    padding-bottom: 5%;
+}
+
+.input-field:hover, .select-wrapper:hover {
+    color: $highlight-color;
+    transition: color 1.5s;
+    }
+
+.input.field:focus, .select-wrapper:focus {
+    color: $highlight-color;
+}
+
+.select-wrapper {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+input, select {
+    border: 0;
+    color: #FFF;
+    outline: none;
+    background-color: $primary-color;
+}
+
+input {
+    width: 100%;
+    padding: 1%;
+    margin-top: 2%;
+    border-bottom: 4px solid $highlight-color;
+}
+
+input:focus, input:hover {
+    border-bottom: 4px solid #e74b6d;
+    transition: border-color 1.5s;
+}
+
+input::placeholder {
+    color: $highlight-color;
+    opacity: .6;
+}
+
+.select-wrapper__box {
+    border: 4px solid $highlight-color;
+    max-width: 50%;
+    margin: auto;
+    margin-top: 2%;
+}
+
+// adding :focus to this got me a weird double border whenever I interacted with the element, so I left it out.
+
+.select-wrapper__box:hover {
+    border: 4px solid $punchy-pink;
+    transition: border-color 1.5s;
+}
+
+select {
+    color: #FFF;
+    width: 100%;
+}
+
+.can-you-complete-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $punchy-pink;
+    text-align: center;
+    max-width: 25rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1.25rem;
+    margin: auto;
+}
+
+.can-you-complete-card:hover {
+    transition: background-color 1.5s, color 1.5s;
+    background-color: #d82a50;
+}
+
+.checkbox-wrapper {
+    white-space: nowrap;
+    padding-top: 2%;
+  }
+
+  .checkbox {
+    vertical-align: top;
+    display: inline-block;
+    width: 2.6rem;
+    visibility: hidden;
+  }
+
+  .checkbox-label {
+    white-space: normal;
+    display: inline-block;
+  }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10%;
+    padding-top: 5%;
+}
+
+button {
+    font-family: $fancy-font;
+    font-size: 2rem;
+    background-color: $highlight-color;
+    box-shadow: 0px 4px 4px rgba(0, 22, 140, 0.25);
+    border-style: none;
+    border-radius: 6.25rem;
+    width: 20rem;
+    height: 3.5rem;
+    padding: .2rem;
+    transition: width 1.5s, background-color 1.5s;
+}
+
+button:hover {
+    width: 25rem;
+    background-color: $punchy-red;
+}
+
+.button__text {
+    filter: drop-shadow(3px 3px 1px #b35a5a);
+    }
+
+/* Footer elements */
+
+footer {
+    transform: rotate(20deg);
+    font-size: 1.8rem;
+    text-align: center;
+    opacity: .7;
+    color: $punchy-red;
+    margin-top: -1%;
+}
+
+footer a {
+    color: $punchy-pink;
+    text-decoration: none;
+}
+
+// I wanted a similar transition for that email link in the footer like I did with the other elements but I couldn't quite find a css tweak that did it without jury-rigging a bunch of box shadows...
+
+footer a:hover {
+    filter: drop-shadow(1px 1px 1px #00168C);
+}
