@@ -21,23 +21,23 @@
     
     <div class="input-field">
         <label for="name">Name:</label><br />
-            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
     </div>
  
     <div class="input-field">
-        <label for="pronouns">Pronouns:</label><br />
-            <input type="text" name="pronouns" placeholder="Your Pronouns" optional>
+        <label for="pronouns" for="pronouns">Pronouns:</label><br />
+            <input type="text" id="pronouns" name="pronouns" placeholder="Your Pronouns" optional>
     </div>
         
     <div class="input-field">
         <label for="email" required>E-mail:</label><br />
-            <input type="text" name="email" placeholder="Your E-mail Address" required>
+            <input type="email" id="email" name="email" placeholder="Your E-mail Address" required>
     </div>
 
     <div class="select-wrapper">
             <label for="media-type">What type of media are you contributing?</label>
                 <div class="select-wrapper__box">
-                <select name="media-type" class="select" required>
+                <select type="select" id="media-type" name="media-type" class="select" required>
                     <option value="placeholder" disabled selected hidden>Please Select</option>
                     <option value="fiction">Fiction</option>
                     <option value="poetry">Poetry</option>
