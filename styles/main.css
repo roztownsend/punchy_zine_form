@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-    font-family: Oswald, sans-serif;
+    font-family: "Yellowtail", cursive;
     font-size: 64px;
     letter-spacing: 4px;
     filter: drop-shadow(3px 3px 1px #e74b6d);
@@ -52,14 +52,13 @@ main {
     width: 100%;
     height: 800px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     position: relative;
     background-color: #6370B6;
     border: 5px solid #FF9F9F;
     border-radius: 50px;
-
 }
 
 form {
@@ -70,9 +69,6 @@ form {
 
 .input-field, .select-wrapper {
     padding-bottom: 5%;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    overflow: hidden;
 }
 
 .select-wrapper {
@@ -90,7 +86,7 @@ input, select {
 
 input {
     width: 100%;
-    padding:1%;
+    padding: 1%;
     margin-top: 2%;
     border-bottom: 4px solid #FF9F9F;
 }
@@ -130,25 +126,10 @@ select {
     width: 100%;
 }
 
-/* 
-
-    my select box is pretty darned broken, and I can't find
-    a way to fix it with pure CSS alone:
-    - the fonts won't show up in the drop-down box in FF
-    - the placeholder text refuses to style
-    - the highlight color is a default dark grey
-
-    I was able to take a look at your example for the cat adoption thing
-    and got it to work, but that only got me so far :/ 
-
-*/
-
 .can-you-complete-card {
-    position: relative;
     background-color: #e74b6d;
     text-align: center;
-    box-sizing: border-box;
-    max-width: 60%;
+    max-width: 400px;
     width: 100%;
     padding: 12px;
     border-radius: 20px;
@@ -220,7 +201,6 @@ button {
     box-shadow: 0px 4px 4px rgba(0, 22, 140, 0.25);
     border-style: none;
     border-radius: 100px;
-    margin: 0;
     width: 400px;
     height: 56px;
     padding: 3px;
@@ -231,9 +211,8 @@ button:hover {
 }
 
 .button__text {
-        filter: drop-shadow(3px 3px 1px #b35a5a);
-
-}
+    filter: drop-shadow(3px 3px 1px #b35a5a);
+    }
 
 /* Footer elements */
 
