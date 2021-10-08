@@ -14,67 +14,63 @@
     <title>Punchy's Zine 2021: Sign-up Form</title>
 </head>
 <body>
-        <header class="punchy-2021-box__logo">
-            <h1>Punchy's Zine 2021!</h1>
-        </header>
-        <div class="flexbox">
-    <main class="form-card">
-                <h2>Sign-up Form</h2>
-            <form autocomplete="off" action="">
-            
-            <div class="input-field">
-                <label for="name">Name:</label><br />
-                    <input type="text" name="name" placeholder="Your Name" required>
-            </div>
-
-            <div class="input-field">
-               <label for="pronouns">Pronouns:</label><br />
-                    <input type="text" name="pronouns" placeholder="Your Pronouns" optional>
-            </div>
-                
-            <div class="input-field">
-              <label for="email" required>E-mail:</label><br />
-                    <input type="text" name="email" placeholder="Your E-mail Address" required>
-            </div>
-
-            <div class="select-wrapper">
-                    <label for="media-type">What type of media are you contributing?</label>
-                        <div class="select-wrapper__box">
-                        <select name="media-type" class="select" required>
-                            <option value="placeholder" disabled selected hidden>Please Select</option>
-                            <option value="fiction">Fiction</option>
-                            <option value="poetry">Poetry</option>
-                            <option value="essay">Essay</option>
-                            <option value="illustration">Illustration</option>
-                            <option value="comics">Comics</option>
-                            <option value="other">Other (we'll talk!)</option>
-                        </select>
-                    </div>
-                </div>
-                
-                <div class="can-you-complete-card">
-                    <h3>Important!</h3>
-                        <input type="checkbox" id="checkbox-element" required />
-                        <label for="checkbox-element">
-                            
-                        <span class="indicator"></span>
-                            
-                        <div class="label-text">
-                            By checking the box above, you promise to complete your
-                            submission by 5 p.m. CET on 15 December, 2021!
-                        </div>
-                        </label>
-                </div>
-
-                <div class="button-container">
-                    <button type="submit"><span class="button__text">Submit!</span></button>
-                </div>
-            </form> 
-    </main>
+            <h1 class="punchy-logo">Punchy's Zine 2021!</h1>
+    <main>
+        <h2>Sign-up Form</h2>
+    <form autocomplete="off" action="">
+    
+    <div class="input-field">
+        <label for="name">Name:</label><br />
+            <input type="text" name="name" placeholder="Your Name" required>
     </div>
-    <footer class="thanks">
+
+    <div class="input-field">
+        <label for="pronouns">Pronouns:</label><br />
+            <input type="text" name="pronouns" placeholder="Your Pronouns" optional>
+    </div>
+        
+    <div class="input-field">
+        <label for="email" required>E-mail:</label><br />
+            <input type="text" name="email" placeholder="Your E-mail Address" required>
+    </div>
+
+    <div class="select-wrapper">
+            <label for="media-type">What type of media are you contributing?</label>
+                <div class="select-wrapper__box">
+                <select name="media-type" class="select" required>
+                    <option value="placeholder" disabled selected hidden>Please Select</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="poetry">Poetry</option>
+                    <option value="essay">Essay</option>
+                    <option value="illustration">Illustration</option>
+                    <option value="comics">Comics</option>
+                    <option value="other">Other (we'll talk!)</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="can-you-complete-card">
+            <h3>Important!</h3>
+                <input type="checkbox" id="checkbox-element" required />
+                <label for="checkbox-element">
+                    
+                <span class="indicator"></span>
+                    
+                <div class="label-text">
+                    By checking the box above, you promise to complete your
+                    submission by 5 p.m. CET on 15 December, 2021!
+                </div>
+                </label>
+        </div>
+
+        <div class="button-container">
+            <button type="submit"><span class="button__text">Submit!</span></button>
+        </div>
+    </form> 
+    </main>
+    <!-- <footer class="thanks">
     Thanks!<br />
     xx <a href="mailto:punchy@dummyemail.com">Punchy</a>
-    </footer>
+    </footer> -->
 </body>
 </html>
