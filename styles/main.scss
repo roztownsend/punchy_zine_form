@@ -1,4 +1,5 @@
 
+@import 'mqs';
 @import 'fonts';
 
 $primary-color: #7386E7;
@@ -13,12 +14,12 @@ body {
     font-size: 1.5rem;
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 .punchy-logo {
     max-width: 20rem;
     text-align: center;
-    transform: rotate(-30deg);
 }
 
 /* Main/form elements */
@@ -26,11 +27,10 @@ body {
 .title {
     width: 90%;
     align-self: baseline;
-    margin: auto;
 }
 
 main {
-    max-width: 80%;
+    max-width: 60%;
     margin: auto;
     margin-top: -10%;
     display: flex;
@@ -41,7 +41,7 @@ main {
     flex-basis: 1;
     background-color: #6370B6;
     border: 5px solid $highlight-color;
-    border-radius: 50px;
+    border-radius: 3.2rem;
 }
 
 form {
@@ -51,7 +51,7 @@ form {
 }
 
 .input-field, .select-wrapper {
-    padding-bottom: 5%;
+    padding:2%;
 }
 
 .input-field:hover, .select-wrapper:hover {
@@ -187,6 +187,7 @@ footer {
     opacity: .7;
     color: $punchy-red;
     margin-top: -1%;
+    height: 1rem;
 }
 
 footer a {
