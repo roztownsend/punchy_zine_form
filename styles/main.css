@@ -1,16 +1,12 @@
 /* Document-level elements */
 
 body {
-    margin: auto;
     background-color: #7386E7;
     font-family: "Oswald", sans-serif;
     font-size: 20px;
     color: #FFF;
     height: 100vh;
     width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 h1 {
@@ -20,12 +16,19 @@ h1 {
     line-height: 66px;
     filter: drop-shadow(3px 3px 1px #00168C);
     color: #e74b6d;
+    opacity: 70%;
+}
+
+h1:hover {
+    transition: ease-in 1s;
+    opacity: 100%;
 }
 
 h2 {
     font-family: "Yellowtail", cursive;
     font-size: 64px;
     letter-spacing: 4px;
+    text-align: right;
     filter: drop-shadow(3px 3px 1px #e74b6d);
 }
 
@@ -41,23 +44,27 @@ h3 {
 .punchy-logo {
     max-width: 400px;
     text-align: center;
-    position: absolute;
-    top: -80px;
-    left: -50px;
-    transform: rotate(-45deg);
+    transform: rotate(-30deg);
 }
 
 /* Main/form elements */
 
+.title {
+    width: 90%;
+    align-self: baseline;
+    margin: auto;
+}
+
 main {
-    max-width: 800px;
-    height: 800px;
+    max-width: 80%;
+    margin: auto;
+    margin-top: -10%;
     display: flex;
-    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    position: relative;
+    flex-basis: 1;
     background-color: #6370B6;
     border: 5px solid #FF9F9F;
     border-radius: 50px;
@@ -195,23 +202,20 @@ button:hover {
 /* Footer elements */
 
 footer {
-    padding-bottom: 3%;
-}
-
-.thanks {
     transform: rotate(20deg);
     font-family: "Yellowtail", cursive;
     font-size: 30px;
     text-align: center;
     opacity: .7;
     color: #930000;
+    margin-top: -1%;
 }
 
-.thanks a {
+footer a {
     color:#e74b6d;
     text-decoration: none;
 }
 
-.thanks a:hover {
+footer a:hover {
     filter: drop-shadow(1px 1px 1px #00168C);
 }
