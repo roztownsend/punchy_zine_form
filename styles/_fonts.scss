@@ -42,8 +42,18 @@ nav li a {
     color: #FFF;
 }
 
-nav li a:hover, nav li a:active {
+nav .current-page {
+    font-weight: bold;
     color: $highlight-color;
+}
+
+.thanks a {
+    color: $punchy-pink;   
+}
+
+nav li a:hover, nav li a:active, .thanks a:hover {
+    color: $highlight-color;
+    transition: color 1.5s;
 }
 
 footer {
@@ -55,12 +65,3 @@ font-size: 1.8rem;
 text-align: center;
 }
 
-.thanks a {
-    color: $punchy-pink;   
-}
-
-// I wanted a similar transition for that email link in the footer like I did with the other elements but I couldn't quite find a css tweak that did it without jury-rigging a bunch of box shadows...
-
-.thanks a:hover {
-    filter: drop-shadow(1px 1px 1px #00168C);
-}
