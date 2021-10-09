@@ -4,7 +4,8 @@
 $fancy-font: "Yellowtail", serif;
 $primary-font: "Oswald", sans-serif;
 
-h1, h2, h3, .thanks {
+
+h1, h2, h3 {
     font-family: $fancy-font;
 }
 
@@ -13,8 +14,7 @@ h1 {
     letter-spacing: .2rem;
     line-height: 4rem;
     filter: drop-shadow(3px 3px 1px #00168C);
-    color: #e74b6d;
-    opacity: 70%;
+    color: $punchy-pink;
 }
 
 h2 {
@@ -47,11 +47,7 @@ nav .current-page {
     color: $highlight-color;
 }
 
-.thanks a {
-    color: $punchy-pink;   
-}
-
-nav li a:hover, nav li a:active, .thanks a:hover {
+nav li a:hover, nav li a:active {
     color: $highlight-color;
     transition: color 1.5s;
 }
@@ -61,7 +57,18 @@ footer {
 }
 
 .thanks, .thanks a {
-font-size: 1.8rem;
-text-align: center;
+    font-family: $fancy-font;    
+    font-size: 2rem;
+    text-align: center;
+    color: $punchy-pink;
+    line-height: 1.5rem;
+}
+
+.thanks a {
+    color: $punchy-red;
+}
+
+.thanks a:hover, a:active, a:focus {
+    text-decoration:underline;
 }
 

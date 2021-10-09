@@ -140,7 +140,7 @@ select {
     -moz-appearance: none;
     -o-appearance: none;
     appearance: none;
-    border-radius: 4px;
+    border-radius: 4px;fi
     outline: none;
     cursor: pointer;
   }
@@ -180,9 +180,9 @@ button {
     transition: width 1.5s, background-color 1.5s;
 }
 
-button:hover {
-    width: 18rem;
+button:hover, button:active, button:focus {
     background-color: $punchy-red;
+    width: 18rem;
 }
 
 .button__text {
@@ -191,13 +191,11 @@ button:hover {
 
 /* Footer elements */
 
-.thanks  {
+.thanks, a  {
     transform: rotate(20deg);
-    opacity: .7;
-    color: $punchy-red;
     margin-top: -1%;
-    height: 1rem;
 }
+
 .jump-back, a {
     text-align: center;
     font: $primary-font;

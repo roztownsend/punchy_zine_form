@@ -48,8 +48,8 @@
         margin-left: -2%;
     }
 
-    button:target {
-        margin-top: 5px;
+    button:active, button:focus {
+        background-color: $punchy-red;
     }
 }
 
@@ -58,27 +58,23 @@
     .checkbox > input:checked + span::before {
         content: '\2713';
         left: 0.5rem;
-        top: 0.2rem;
+        top: 0.2rem;    
 
     .jump-back {
         padding-top: 20%;
     }
-}
+}   
 
 @media screen and (min-width: 768px) {
     .punchy-logo {
         transform: rotate(-25deg);
-        margin-bottom: -12%;
+        margin-left: 5%;
+        margin-bottom: -13%;
     }
 
     i {
-        margin-bottom:10%;
+        margin-bottom:11%;
     }
-
-    h1:hover {
-        transition: ease-in 1s;
-        opacity: 100%;
-    }    
 
     main {
         max-width: 60%;
