@@ -4,3 +4,21 @@ $highlight-color: #FF9F9F;
 $form-bg:#6370B6;
 $punchy-pink: #e74b6d;
 $punchy-red: #930000;
+
+@mixin full-border {
+    border: 4px solid $highlight-color;
+}
+
+@mixin full-border__change {
+    border: 4px solid $punchy-pink;
+    transition: border-color 1.5s;
+}
+
+@mixin bottom-border {
+    border-bottom: 4px solid $highlight-color;
+}
+
+@mixin bottom-border__change {
+    border-bottom: 4px solid $punchy-pink;
+    transition: border-color 1.5s;   
+}

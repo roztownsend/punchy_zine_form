@@ -37,6 +37,15 @@ p, body, button {
     color: #FFF;
 }
 
+nav li a {
+    font-size: 1.5rem;
+    color: #FFF;
+}
+
+nav li a:hover, nav li a:active {
+    color: $highlight-color;
+}
+
 footer {
     line-height: 1.25rem;
 }
