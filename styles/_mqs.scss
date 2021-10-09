@@ -46,7 +46,12 @@
     
     .checkbox > input {
         margin-left: -2%;
-      }
+    }
+
+    button:target {
+        margin-top: 5px;
+    }
+}
 
 // I tried some tweaks to make the checkmark align properly at this resolution, but none of my styles would take - something going on with media queries not recognizing certain event states, maybe?
 
