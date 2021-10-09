@@ -40,6 +40,21 @@
         padding-bottom: 3%;
     }
 
+    .checkbox > span {
+        padding: 0;
+    }
+    
+    .checkbox > input {
+        margin-left: -2%;
+      }
+
+// I tried some tweaks to make the checkmark align properly at this resolution, but none of my styles would take - something going on with media queries not recognizing certain event states, maybe?
+
+    .checkbox > input:checked + span::before {
+        content: '\2713';
+        left: 0.5rem;
+        top: 0.2rem;
+
     .jump-back {
         padding-top: 20%;
     }

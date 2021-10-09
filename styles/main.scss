@@ -129,12 +129,12 @@ select {
 }
 
 .checkbox > span {
-    padding: 0.5rem 0.25rem;
+    padding: 0.5rem 0.5rem;
 }
 
 .checkbox > input {
     @include full-border;
-    height:  ;
+    height: 2rem;
     width: 2rem;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -142,7 +142,6 @@ select {
     appearance: none;
     border-radius: 4px;
     outline: none;
-    transition-duration: 0.3s;
     cursor: pointer;
   }
 
