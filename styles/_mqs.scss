@@ -1,10 +1,13 @@
 
-@media screen and (max-width: 320px) {
-
+@media screen and (min-width: 320px) and (max-width: 767px) {
     
     .punchy-logo {
         transform: rotate(0deg);
-        margin-top: auto;
+        margin: auto;
+    }
+
+    i {
+        margin-bottom:10%;
     }
 
     h1 {
@@ -45,7 +48,11 @@
 @media screen and (min-width: 768px) {
     .punchy-logo {
         transform: rotate(-25deg);
-        margin-bottom: -10%;
+        margin-bottom: -12%;
+    }
+
+    i {
+        margin-bottom:10%;
     }
 
     h1:hover {
@@ -76,11 +83,34 @@
     }
 }
 
-@media screen and (min-width: 769px) {
+// I'm doing something wrong with specifying the screen resolutions with my media queries here and I'm not sure what it is. The spacing in the previous min-width is affecting the one below.
+
+@media screen and (min-width: 770px) {
     .punchy-logo {
         transform: rotate(-30deg);
         margin-left: 12%;
-        margin-top: -5%;
+    }
+
+    nav {
+        margin: auto;
+        text-align: center;
+        width: 75%;
+        padding-left: 5%;
+    }
+
+    nav ul {
+        list-style: none;
+        display: inline;
+    }
+
+    nav ul li {
+        list-style: none;
+        display: inline;
+        text-align: center;
+        text-decoration: none;
+        height: 3rem;
+        line-height: 3rem;
+        padding-left: 2%;
     }
 
     .jump-back {
